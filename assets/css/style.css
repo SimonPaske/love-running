@@ -211,3 +211,8 @@ hr {
 #times h2 {
     color: #fafafa;
 }
+
+footer a {
+    text-align: center;
+    padding: 3px;
+}
