@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     border: none;
-
 }
+
 body {
     font-family: Lato, sans-serif;
     font-weight: 300;
-    color: #3a3a3a;  
+    color: #3a3a3a;
 }
 
 /* headings and logo */
@@ -27,7 +27,8 @@ h1, h2 {
     margin-left: 30px;
 }
 
-/* Navigation links */
+/* navigation links */
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -35,7 +36,8 @@ h1, h2 {
 
 #menu, #logo {
     line-height: 75px;
-} 
+}
+
 #menu li {
     float: right;
     list-style-type: none;
@@ -55,11 +57,13 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image and cover text*/
+/* hero image and cover text */
+
 #hero-outer {
-    height: 600px;  
+    height: 600px;
     width: 100%;
     overflow: hidden;
+
     position: relative;
 }
 
@@ -68,9 +72,9 @@ h1, h2 {
 }
 
 #hero-image {
-    height: 600px;  
+    height: 600px;
     width: 100%;
-    background: url(../images/hero-image.webp) no-repeat center center; 
+    background: url('../images/hero-image.webp') no-repeat center center;
 
     /* animates zoom effect on loading page */
     animation-name: hero-zoom;
@@ -78,14 +82,12 @@ h1, h2 {
     animation-fill-mode: forwards;
 }
 
-
-
 /* creates the level of zoom for hero image */
 @keyframes hero-zoom {
-    from {
+    from{
         transform: scale(1);
     }
-    to {
+    to{
         transform: scale(1.1);
     }
 }
@@ -97,7 +99,7 @@ h1, h2 {
     letter-spacing: 4px;
 
     width: 300px;
-    height: 200px;  
+    height: 200px;
 
     padding-top: 40px;
     padding-left: 10px;
@@ -106,9 +108,11 @@ h1, h2 {
 
     bottom: 30px;
     right: 150px;
+
     position: absolute;
 }
 
+/* club ethos */
 
 #club-ethos {
     height: 600px;
@@ -118,25 +122,21 @@ h1, h2 {
     padding-top: 30px;
     width: 33%;
     float: left;
-    
 }
 
 #right-about {
     padding-top: 30px;
     width: 33%;
     float: right;
-    
 }
 
 #center-about {
-    padding-top: 30px;
     width: 33%;
     margin: 0 auto;
-    
 }
 
 hr {
-    border-top:1px solid #3a3a3a;
+    border-top: 1px solid #3a3a3a;
     width: 100%;
     margin: 5px 0;
 }
@@ -144,7 +144,7 @@ hr {
 .left-about-heading {
     width: 60%;
     float: right;
-    line-height: 20PX;
+    line-height: 20px;
     clear: both;
     margin-bottom: 50px;
 }
@@ -152,7 +152,7 @@ hr {
 .right-about-heading {
     width: 60%;
     float: left;
-    line-height: 20PX;
+    line-height: 20px;
     clear: both;
     margin-bottom: 50px;
 }
@@ -160,13 +160,15 @@ hr {
 .right-about-heading h2 {
     text-align: right;
 }
+
 .right-about-heading p {
     text-align: right;
 }
+
 #welcome {
     text-align: center;
     margin: 20px 0;
-    font-size: 200%;
+    font-size: 280%;
 }
 
 #circle-container {
@@ -174,7 +176,7 @@ hr {
     height: 300px;
     padding: 30px;
     border-style: solid;
-    border-color: #ccc; 
+    border-color: #ccc;
     border-width: 1px;
     border-radius: 50%;
     margin: 0 auto;
@@ -187,15 +189,16 @@ hr {
 }
 
 /* event times */
+
 #times {
-    background-image: url('../images/dublin-city.webp');
+    background-image: url('../images/times-background.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     overflow: hidden;
-
 }
+
 #times div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
@@ -213,12 +216,13 @@ hr {
 }
 
 /* footer */
+
 footer {
     height: 150px;
-
 }
+
 .social-networks {
-    text-align: center;       
+    text-align: center;
 }
 
 .social-networks > li {
@@ -232,6 +236,8 @@ footer {
     color: #3a3a3a;
 }
 
+/* gallery */
+
 #photos {
     clear: both;
     line-height: 0;
@@ -243,25 +249,27 @@ footer {
     width: 100%;
 }
 
-/* media queiriess */
+/* Media queries */
 
-/* For lager to mediu, screens size from 1200px wide and down */
-
+/* For larger to medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
     #club-ethos {
         width: 65%;
         height: 1200px;
         margin: 0 auto;
     }
+
     #welcome {
         padding: 30px 0;
         margin: 0;
     }
+
     #left-about, #right-about {
         width: 100%;
         float: left;
         padding: 0;
     }
+
     #center-about {
         clear: both;
         width: 100%;
@@ -275,13 +283,15 @@ footer {
         height: 150px;
         padding: 0;
     }
+
     hr {
         display: none;
     }
 }
-    
+
 /* For medium screen sizes from 950px wide and down */
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
+
     #menu {
         clear: left;
         float: left;
@@ -305,7 +315,7 @@ footer {
     }
 
     .left-about-heading h2, .right-about-heading h2 {
-        width: 100@;
+        width: 100%;
         text-align: center;
     }
 
@@ -313,15 +323,11 @@ footer {
         text-align: center;
         padding: 0 20px;
     }
-
-    #photos {
-        column-count: 3;
-    }
 }
-/* For small screen sizes 800px and down */
+
+/* For small screen sizes below 800px width */
 @media screen and (max-width: 800px) {
     #photos {
         column-count: 2;
     }
-    
 }
